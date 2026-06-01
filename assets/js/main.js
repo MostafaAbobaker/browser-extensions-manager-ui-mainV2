@@ -11,7 +11,7 @@ const btnInactive = document.getElementById('btn-inactive');
 /* Get Extensions Data */
 async function loadExtensionsData() {
   try {
-    const response = await fetch('data.json');
+    const response = await fetch('https://gist.githubusercontent.com/MostafaAbobaker/27d8727973e8b95202b4cb454d81ed47/raw/9016c69365e7afea192c7db933007c29a3fd7f03/data.json');
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
