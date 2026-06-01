@@ -11,7 +11,7 @@ const btnInactive = document.getElementById('btn-inactive');
 /* Get Extensions Data */
 async function loadExtensionsData() {
   try {
-    const response = await fetch('./data.json');
+    const response = await fetch('data.json');
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
